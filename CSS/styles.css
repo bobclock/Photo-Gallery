@@ -6,17 +6,23 @@ body {
   text-align: center;
 }
 
+.back {
+  text-decoration: none;
+  color: inherit;
+  font-size: 10px;
+  font-style: italic;
+}
 
 /*Styles for homepage*/
 
   /*Paragraph styles*/
 
-.intro {
+/*.intro {
   max-width: 90%;
   margin: 0 auto;
 }
 
-.intro a:link, .intro a:visited {
+.intro a:link, .intro a:visited  {
   text-decoration: none;
   color: inherit;
 }
@@ -27,9 +33,9 @@ body {
   text-align: justify;
   line-height: 30px;
   font-size: 1.25em; /* 20/16 */
-}
+/*}*/
 
-.plugin {
+/*.plugin {
   border-bottom: dotted 1px black;
   color: black !important;
 }
@@ -37,11 +43,11 @@ body {
 a:hover {
   color: rgb(61, 197, 247) !important;
   transition: 0.5s;
-}
+}*/
 
   /*Link styles*/
 
-.intro h2 {
+/*.intro h2 {
   padding: 10px;
   border: solid rgb(254, 77, 29) 2px;
   border-radius: 5px;
@@ -50,10 +56,10 @@ a:hover {
   display: inline-block;
   margin: 10px 5px;
   color: black;
-}
+}*/
 
 
-h2:hover {
+/*h2:hover {
   background-color: rgb(254, 77, 29);
   border: solid black 2px;
   box-shadow: 2px 2px black;
@@ -63,14 +69,14 @@ h2:hover {
 
   /*Header Styles*/
 
-.first_page {
+/*.first_page {
   background-color: black;
   height: 75px;
   margin: 0;
   position: relative;
-}
+}*/
 
-.first_page p {
+/*.first_page p {
   margin: 0;
   width: 40%;
   position: absolute;
@@ -80,11 +86,11 @@ h2:hover {
   color: white;
   text-shadow: 1px 1px rgb(254, 77, 29);
   font-size: 1.375em; /* 22/16 */
-}
+/*}*/
 
   /*Footer styles*/
 
-footer {
+/*footer {
   background-color: rgb(254, 77, 29);
   color: white;
   height: 50px;
@@ -93,9 +99,9 @@ footer {
   right: 0;
   width: 100%;
   text-align: center;
-}
+}*/
 
-footer p {
+/*footer p {
   width: 80%;
   left: 10%;
   margin: 0;
@@ -103,7 +109,7 @@ footer p {
   bottom: 0;
   padding-bottom: 5px;
   text-shadow: 1px 1px black;
-}
+}*/
 
 /*jQuery styles */
 
@@ -179,18 +185,6 @@ footer p {
 
 
 @media (min-width: 760px) {
-  /*Front page styles*/
-  .intro {
-    width: 50%;
-  }
-
-  .first_page p {
-    font-size: 1.75em; /* 28/16 */
-  }
-  .intro h2 {
-    font-size: 1.15em;
-    width: 150px;
-  }
 
   /*jQuery styles*/
 
@@ -206,5 +200,10 @@ footer p {
 
   img {
     padding: 30px 30px;
+  }
+
+  .list {
+    max-width: 1072px;
+    margin: auto;
   }
 }

@@ -1,34 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Photo Gallery</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/normalize.css">
-  <link rel="stylesheet" href="CSS/styles.css">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/chocolat/chocolat.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
 
-</head>
-<body>
-  <header class="first_page">
-    <p class="title">
-      Photo Gallery
-    </p>
-  </header>
+  <body>
+  
+    <!-- Photo gallery -->
+    <div id="chocolat-gallery" class="gallery list">
+      <input id="search" name="search" placeholder="Search for photos here" type="text" data-list="#imageGallery">
+      <ul id="imageGallery" class="list">
+        <li>
+          <span class="hide">Hay Bales: I love hay bales. Took this snap on a drive through the countryside past some straw fields.
+          </span>
+          <a class="chocolat-image" href="photos/01.jpg" title="Hay Bales: I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
+            <img src="photos/thumbnails/01.jpg" width="200" class="photo one" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Lake: The lake was so calm today. We had a great view of the snow on the mountains from here.
+          </span>
+          <a class="chocolat-image" href="photos/02.jpg" title="Lake: The lake was so calm today. We had a great view of the snow on the mountains from here.">
+            <img src="photos/thumbnails/02.jpg" width="200" class="photo two" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Canyon: I hiked to the top of the mountain and got this picture of the canyon and trees below.
+          </span>
+          <a class="chocolat-image" href="photos/03.jpg" title="Canyon: I hiked to the top of the mountain and got this picture of the canyon and trees below.">
+            <img src="photos/thumbnails/03.jpg" width="200" class="photo three" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Iceberg: It was amazing to see an iceberg up close, it was so cold but didn’t snow today.
+          </span>
+          <a class="chocolat-image" href="photos/04.jpg" title="Iceberg: It was amazing to see an iceberg up close, it was so cold but didn’t snow today.">
+            <img src="photos/thumbnails/04.jpg" width="200" class="photo four" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Desert: The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.
+          </span>
+          <a class="chocolat-image" href="photos/05.jpg" title="Desert: The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.">
+            <img src="photos/thumbnails/05.jpg" width="200" class="photo five" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Fall: Fall is coming, I love when the leaves on the trees start to change color.
+          </span>
+          <a class="chocolat-image" href="photos/06.jpg" title="Fall: Fall is coming, I love when the leaves on the trees start to change color.">
+            <img src="photos/thumbnails/06.jpg" width="200" class="photo six" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Plantation: I drove past this plantation yesterday, everything is so green!
+          </span>
+          <a class="chocolat-image" href="photos/07.jpg" title="Plantation: I drove past this plantation yesterday, everything is so green!">
+            <img src="photos/thumbnails/07.jpg" width="200" class="photo seven" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Dunes: My summer vacation to the Oregon Coast. I love the sandy dunes!
+          </span>
+          <a class="chocolat-image" href="photos/08.jpg" title="Dunes: My summer vacation to the Oregon Coast. I love the sandy dunes!">
+            <img src="photos/thumbnails/08.jpg" width="200" class="photo eight" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Countryside Lane: We enjoyed a quiet stroll down this countryside lane.
+          </span>
+          <a class="chocolat-image" href="photos/09.jpg" title="Countryside Lane: We enjoyed a quiet stroll down this countryside lane.">
+            <img src="photos/thumbnails/09.jpg" width="200" class="photo nine" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Sunset: Sunset at the coast! The sky turned a lovely shade of orange.
+          </span>
+          <a class="chocolat-image" href="photos/10.jpg" title="Sunset: Sunset at the coast! The sky turned a lovely shade of orange.">
+            <img src="photos/thumbnails/10.jpg" width="200" class="photo ten" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Cave: I did a tour of a cave today and the view of the landscape below was breathtaking.
+          </span>
+          <a class="chocolat-image" href="photos/11.jpg" title="Cave: I did a tour of a cave today and the view of the landscape below was breathtaking.">
+            <img src="photos/thumbnails/11.jpg" width="200" class="photo eleven" alt="">
+          </a>
+        </li>
+        <li>
+          <span class="hide">Bluebells: I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.
+          </span>
+          <a class="chocolat-image" href="photos/12.jpg" title="Bluebells: I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
+            <img src="photos/thumbnails/12.jpg" width="200" class="photo twelve" alt="">
+          </a>
+        </li>
+      </ul>
+      <a href="index.html" class="back">Go back to homepage</a>
+    </div>
 
-  <div id="intro" class="intro">
-    <p class="justify">
-      The first example below on the left is developed using jQuery plugins. A big thanks to the guys who developed the <a href="http://chocolat.insipi.de" class="plugin">Chocolat plugin</a> and the <a href="http://vdw.github.io/HideSeek/" class="plugin">Hideseek plugin</a>, which I've used in to develop my photo gallery.<br/>
-      <br/>
-      The second example on the right is written without jQuery and uses only JavaScript that I have written after reading some examples on the web.
-    </p>
-    <a href="jQuery.html" class="boxes"><h2>jQuery plugins</h2></a>
-    <a href="JavaScript.html" class="boxes"><h2>JavaScript</h2></a>
-  </div>
 
+    <!-- Script tags -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/chocolat/jquery.chocolat.min.js"></script>
+    <script src="js/hideseek/jquery.hideseek.min.js"></script>
+    <script>
+      $('#chocolat-gallery').Chocolat({
+        loop: true
+      });
+      $('#search').hideseek();
+    </script>
 
-
-    <footer>
-        <p class="copyright">&copy;2016: MrBobClock</p>
-    </footer>
   </body>
-  </html>
+</html>
